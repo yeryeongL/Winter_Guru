@@ -14,6 +14,8 @@
 		FFF82A7725C7A7F2007AE550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF82A7625C7A7F2007AE550 /* Assets.xcassets */; };
 		FFF82A7A25C7A7F2007AE550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFF82A7825C7A7F2007AE550 /* LaunchScreen.storyboard */; };
 		FFF82A8425C7A94B007AE550 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = FFF82A8325C7A94B007AE550 /* Parchment */; };
+		FFF82A8925C84276007AE550 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A8825C84276007AE550 /* FoodCell.swift */; };
+		FFF82A8C25C84D78007AE550 /* FoodData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A8B25C84D78007AE550 /* FoodData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		FFF82A7625C7A7F2007AE550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFF82A7925C7A7F2007AE550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFF82A7B25C7A7F2007AE550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF82A8825C84276007AE550 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodCell.swift; path = ../../FoodCell.swift; sourceTree = "<group>"; };
+		FFF82A8B25C84D78007AE550 /* FoodData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				FFF82A7625C7A7F2007AE550 /* Assets.xcassets */,
 				FFF82A7825C7A7F2007AE550 /* LaunchScreen.storyboard */,
 				FFF82A7B25C7A7F2007AE550 /* Info.plist */,
+				FFF82A8825C84276007AE550 /* FoodCell.swift */,
+				FFF82A8B25C84D78007AE550 /* FoodData.swift */,
 			);
 			path = FoodRecommend;
 			sourceTree = "<group>";
@@ -146,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF82A7225C7A7F1007AE550 /* ViewController.swift in Sources */,
+				FFF82A8925C84276007AE550 /* FoodCell.swift in Sources */,
 				FFF82A6E25C7A7F1007AE550 /* AppDelegate.swift in Sources */,
+				FFF82A8C25C84D78007AE550 /* FoodData.swift in Sources */,
 				FFF82A7025C7A7F1007AE550 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

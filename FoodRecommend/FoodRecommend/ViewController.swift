@@ -8,7 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var titleImages = ["korean","chinese","japanese","western","snack","asian"]
+    
+    var foodData = [
+        FoodData("한식","korean"),
+        FoodData("중식","chinese"),
+        FoodData("일식","japanese"),
+        FoodData("양식","western"),
+        FoodData("분식","snack"),
+        FoodData("아시안","asian")
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,11 +28,27 @@ class ViewController: UIViewController {
 
 extension ViewController:UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return titleImages.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "foodCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "foodCell", for: indexPath) as! FoodCell
+        
+        let data = foodData[indexPath.row]
+        
+        //대분류이름
+        cell.titleLabel.text = data.title
+
+        
+        //타이틀 이미지 변경
+        cell.titleImage.image = UIImage(named: titleImages[indexPath.row])
+        
+        
+        //border 설정
+        cell.layer.borderWidth = 0.3
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        
+        
         return cell
     }
 }
