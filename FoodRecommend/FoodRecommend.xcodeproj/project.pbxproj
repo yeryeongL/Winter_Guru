@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0CD3D8E25C99F200038C4A9 /* BannerMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD3D8D25C99F200038C4A9 /* BannerMainViewController.swift */; };
+		D0CD3D9225C9A0910038C4A9 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD3D9125C9A0910038C4A9 /* Banner.swift */; };
 		FFF82A6E25C7A7F1007AE550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A6D25C7A7F1007AE550 /* AppDelegate.swift */; };
 		FFF82A7025C7A7F1007AE550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A6F25C7A7F1007AE550 /* SceneDelegate.swift */; };
 		FFF82A7225C7A7F1007AE550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A7125C7A7F1007AE550 /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0CD3D8D25C99F200038C4A9 /* BannerMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerMainViewController.swift; sourceTree = "<group>"; };
+		D0CD3D9125C9A0910038C4A9 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		FFF82A6A25C7A7F1007AE550 /* FoodRecommend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecommend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF82A6D25C7A7F1007AE550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF82A6F25C7A7F1007AE550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				FFF82A7B25C7A7F2007AE550 /* Info.plist */,
 				FFF82A8825C84276007AE550 /* FoodCell.swift */,
 				FFF82A8B25C84D78007AE550 /* FoodData.swift */,
+				D0CD3D8D25C99F200038C4A9 /* BannerMainViewController.swift */,
+				D0CD3D9125C9A0910038C4A9 /* Banner.swift */,
 			);
 			path = FoodRecommend;
 			sourceTree = "<group>";
@@ -151,9 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0CD3D8E25C99F200038C4A9 /* BannerMainViewController.swift in Sources */,
 				FFF82A7225C7A7F1007AE550 /* ViewController.swift in Sources */,
 				FFF82A8925C84276007AE550 /* FoodCell.swift in Sources */,
 				FFF82A6E25C7A7F1007AE550 /* AppDelegate.swift in Sources */,
+				D0CD3D9225C9A0910038C4A9 /* Banner.swift in Sources */,
 				FFF82A8C25C84D78007AE550 /* FoodData.swift in Sources */,
 				FFF82A7025C7A7F1007AE550 /* SceneDelegate.swift in Sources */,
 			);
@@ -304,6 +312,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodRecommend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,6 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FoodRecommend/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

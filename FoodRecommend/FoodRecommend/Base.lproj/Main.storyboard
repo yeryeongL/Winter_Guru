@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Zk-4I-xjr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodRecommend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CNQ-NX-Lhk">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="574"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="zcY-SQ-E1K">
                                     <size key="itemSize" width="326" height="436"/>
@@ -81,7 +81,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
+            <point key="canvasLocation" x="671" y="603"/>
+        </scene>
+        <!--Banner Main View Controller-->
+        <scene sceneID="6uB-Te-rhM">
+            <objects>
+                <viewController id="4Zk-4I-xjr" customClass="BannerMainViewController" customModule="FoodRecommend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SVL-Ma-g6M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qK-Fd-OKx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7qK-Fd-OKx" secondAttribute="height" multiplier="944:456" id="Rqk-pC-MAM"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="zPM-6U-m6E"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="cfE-ZF-E70"/>
+                            </scrollView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWu-9e-s5k">
+                                <rect key="frame" x="0.0" y="244" width="414" height="618"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="embed" id="86b-Tn-PwC"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2v0-rI-8NZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7qK-Fd-OKx" firstAttribute="trailing" secondItem="2v0-rI-8NZ" secondAttribute="trailing" id="1kg-yA-gdO"/>
+                            <constraint firstItem="EWu-9e-s5k" firstAttribute="leading" secondItem="2v0-rI-8NZ" secondAttribute="leading" id="JTU-n1-Lce"/>
+                            <constraint firstItem="EWu-9e-s5k" firstAttribute="bottom" secondItem="2v0-rI-8NZ" secondAttribute="bottom" id="Lhj-8w-Dsi"/>
+                            <constraint firstItem="EWu-9e-s5k" firstAttribute="top" secondItem="7qK-Fd-OKx" secondAttribute="bottom" id="Re0-LK-nLO"/>
+                            <constraint firstItem="7qK-Fd-OKx" firstAttribute="leading" secondItem="2v0-rI-8NZ" secondAttribute="leading" id="WC4-U9-vs2"/>
+                            <constraint firstItem="7qK-Fd-OKx" firstAttribute="top" secondItem="2v0-rI-8NZ" secondAttribute="top" id="jsa-ie-4iV"/>
+                            <constraint firstItem="EWu-9e-s5k" firstAttribute="trailing" secondItem="2v0-rI-8NZ" secondAttribute="trailing" id="vd7-in-6m3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerScrollView" destination="7qK-Fd-OKx" id="TLb-fw-5I4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAt-pO-NJD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="671" y="-21"/>
         </scene>
     </scenes>
     <resources>
