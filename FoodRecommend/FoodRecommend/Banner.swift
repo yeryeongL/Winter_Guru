@@ -4,7 +4,6 @@
 //
 //  Created by 김규리 on 2021/02/03.
 //
-
 // banner 이미지 불러오기
 
 import UIKit

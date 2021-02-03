@@ -18,9 +18,19 @@ class ViewController: UIViewController {
         FoodData("분식","snack"),
         FoodData("아시안","asian")
     ]
+    
+    @IBOutlet weak var bannerScrollView: UIScrollView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let bannerViewController = Banner()
+        // 화면에 표시되도록 넣어줌
+        bannerScrollView.addSubview(bannerViewController.view)
+        // 스크롤이 가능하도록 컨텐츠 사이즈 설정
+        bannerScrollView.contentSize = bannerViewController.view.frame.size
+        
             }
 
 
