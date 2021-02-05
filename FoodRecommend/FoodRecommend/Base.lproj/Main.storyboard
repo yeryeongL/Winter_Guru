@@ -61,7 +61,7 @@
                                         <connections>
                                             <outlet property="titleImage" destination="Ut2-zb-pZl" id="L1R-xl-XMx"/>
                                             <outlet property="titleLabel" destination="xnP-qE-FyY" id="fmE-gI-U3i"/>
-                                            <segue destination="6tp-LN-0SJ" kind="show" id="IVP-p8-pxy"/>
+                                            <segue destination="QKf-Tj-q0m" kind="show" id="Dat-4z-vwq"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="88.392857142857139"/>
         </scene>
-        <!--Random Generator-->
+        <!--View Controller-->
         <scene sceneID="hkA-x0-qTF">
             <objects>
-                <viewController id="6tp-LN-0SJ" customClass="RandomGenerator" customModule="FoodRecommend" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6tp-LN-0SJ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Vw-H0-WWi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,13 +125,46 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ODk-kF-DzD"/>
-                    <connections>
-                        <outlet property="randomImage" destination="ipF-e1-NJT" id="n1H-V1-G0T"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROj-jm-rih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1957.9710144927537" y="88.392857142857139"/>
+            <point key="canvasLocation" x="2935" y="88"/>
+        </scene>
+        <!--Random Generator-->
+        <scene sceneID="Xfn-sb-Pkb">
+            <objects>
+                <viewController id="QKf-Tj-q0m" customClass="RandomGenerator" customModule="FoodRecommend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Utm-Gm-L20">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-uI-3NJ">
+                                <rect key="frame" x="20" y="281" width="374" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LRN-uI-3NJ" secondAttribute="height" multiplier="1:1" id="VC6-eE-eYZ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1aL-Si-E5a"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LRN-uI-3NJ" firstAttribute="top" secondItem="1aL-Si-E5a" secondAttribute="top" constant="193" id="2dE-Qn-xw6"/>
+                            <constraint firstItem="1aL-Si-E5a" firstAttribute="bottom" secondItem="LRN-uI-3NJ" secondAttribute="bottom" constant="246" id="KDh-KZ-DGX"/>
+                            <constraint firstItem="1aL-Si-E5a" firstAttribute="trailing" secondItem="LRN-uI-3NJ" secondAttribute="trailing" constant="20" id="Pjh-Wh-GTj"/>
+                            <constraint firstItem="LRN-uI-3NJ" firstAttribute="leading" secondItem="1aL-Si-E5a" secondAttribute="leading" constant="20" id="aSQ-rm-Hhr"/>
+                            <constraint firstItem="LRN-uI-3NJ" firstAttribute="leading" secondItem="1aL-Si-E5a" secondAttribute="leading" constant="20" id="eZh-4X-s9b"/>
+                            <constraint firstItem="1aL-Si-E5a" firstAttribute="trailing" secondItem="LRN-uI-3NJ" secondAttribute="trailing" constant="20" id="whY-iD-PUt"/>
+                            <constraint firstItem="LRN-uI-3NJ" firstAttribute="top" secondItem="1aL-Si-E5a" secondAttribute="top" constant="20" id="x8l-fr-G7l"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sM3-Vd-Zm9"/>
+                    <connections>
+                        <outlet property="randomImage" destination="LRN-uI-3NJ" id="M5I-Ld-gme"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEO-zD-p5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031.8840579710147" y="87.723214285714278"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cx0-eF-WET">

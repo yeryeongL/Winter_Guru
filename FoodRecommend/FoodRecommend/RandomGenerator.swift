@@ -14,8 +14,17 @@ class RandomGenerator: UIViewController{
     
     @IBOutlet weak var randomImage: UIImageView!
     var category = ""
-    let foods:[String:[String]] = ["한식":Array<String>(), "중식":Array<String>(),"일식":Array<String>(),"양식":Array<String>(),"아시안":Array<String>(),"분식":Array<String>()]
-
+//    let foods:[String:[String]] = ["한식":Array<String>(), "중식":Array<String>(),"일식":Array<String>(),"양식":Array<String>(),"아시안":Array<String>(),"분식":Array<String>()]
+    
+    let foods: [String:[String]] = ["한식":["튀김"], "중식":["짜장면","짬뽕"],"일식":["초밥","모밀"],"양식":["스테이크","파스타"],
+                                    "아시안":["쌀국수","팟타이"],"분식":["떡볶이","순대"]]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        print("in")
+        randomImgPicker()
+    }
+    
     func randomImgPicker() {
         
         if let category_foods = foods[category] {
