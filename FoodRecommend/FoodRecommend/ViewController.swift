@@ -70,6 +70,14 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
         
         return CGSize(width: width, height: height)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let cell =  sender as? FoodCell {
+            print("cell")
+            print(cell.titleLabel.text)
+        }
+    }
 }
+
 
 

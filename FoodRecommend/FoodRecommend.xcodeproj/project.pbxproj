@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D02292AD25CA4CA800EBE8D6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02292AC25CA4CA800EBE8D6 /* Banner.swift */; };
+		FF8847BF25CC534C009FC2A3 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8847BE25CC534C009FC2A3 /* RandomGenerator.swift */; };
 		FFF82A6E25C7A7F1007AE550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A6D25C7A7F1007AE550 /* AppDelegate.swift */; };
 		FFF82A7025C7A7F1007AE550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A6F25C7A7F1007AE550 /* SceneDelegate.swift */; };
 		FFF82A7225C7A7F1007AE550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A7125C7A7F1007AE550 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		D02292AC25CA4CA800EBE8D6 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		FF8847BE25CC534C009FC2A3 /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 		FFF82A6A25C7A7F1007AE550 /* FoodRecommend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecommend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF82A6D25C7A7F1007AE550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF82A6F25C7A7F1007AE550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				FFF82A8825C84276007AE550 /* FoodCell.swift */,
 				FFF82A8B25C84D78007AE550 /* FoodData.swift */,
 				D02292AC25CA4CA800EBE8D6 /* Banner.swift */,
+				FF8847BE25CC534C009FC2A3 /* RandomGenerator.swift */,
 			);
 			path = FoodRecommend;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF8847BF25CC534C009FC2A3 /* RandomGenerator.swift in Sources */,
 				FFF82A7225C7A7F1007AE550 /* ViewController.swift in Sources */,
 				FFF82A8925C84276007AE550 /* FoodCell.swift in Sources */,
 				FFF82A6E25C7A7F1007AE550 /* AppDelegate.swift in Sources */,
