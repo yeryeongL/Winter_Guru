@@ -80,11 +80,15 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell =  sender as? FoodCell {
-            print("cell")
-            print(cell.titleLabel.text)
+            if let vc = segue.description as? RandomGenerator, let title = cell.titleLabel, let title_text = title.text {
+        
+                vc.category = title_text
+                
+            }
+            
         }
     }
-
+}
 
 
 

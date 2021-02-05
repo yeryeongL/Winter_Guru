@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Random Generator-->
         <scene sceneID="hkA-x0-qTF">
             <objects>
-                <viewController id="6tp-LN-0SJ" sceneMemberID="viewController">
+                <viewController id="6tp-LN-0SJ" customClass="RandomGenerator" customModule="FoodRecommend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Vw-H0-WWi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,6 +125,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="ODk-kF-DzD"/>
+                    <connections>
+                        <outlet property="randomImage" destination="ipF-e1-NJT" id="n1H-V1-G0T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ROj-jm-rih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
