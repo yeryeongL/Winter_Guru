@@ -64,6 +64,12 @@ extension ViewController:UICollectionViewDataSource{
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10
+    }
+    
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = self.view.frame.size.width / 3-5
         let height = width * 1.5
@@ -71,13 +77,14 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
         return CGSize(width: width, height: height)
     }
     
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell =  sender as? FoodCell {
             print("cell")
             print(cell.titleLabel.text)
         }
     }
-}
+
 
 
 
