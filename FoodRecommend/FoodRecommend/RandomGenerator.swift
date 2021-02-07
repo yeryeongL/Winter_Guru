@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class RandomGenerator: UIViewController{
+    
+    var indicator:NVActivityIndicatorView!
 
     //아울렛 이름을 KoreanImage로 해서 하나 만들것
     
     
     @IBOutlet weak var randomImage: UIImageView!
     var category = ""
+    
 //    let foods:[String:[String]] = ["한식":Array<String>(), "중식":Array<String>(),"일식":Array<String>(),"양식":Array<String>(),"아시안":Array<String>(),"분식":Array<String>()]
     
     let foods: [String:[String]] = ["한식":["갈비찜","감자탕","곱창","김치찌개","낚지볶음","닭볶음탕","된장찌개","만둣국","매운탕","보쌈","부대찌개","불고기","비빔밥","삼겹살","삼계탕","설렁탕","순대국","순두부찌개","아구찜","오리고기","전","제육볶음","족발","쭈꾸미","찜닭","칼국수","해장국"],
@@ -25,21 +29,35 @@ class RandomGenerator: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        indicator = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), type: .pacman, color: .white, padding: self.view.frame.width/2 - 40)
+        indicator.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        self.view.addSubview(indicator)
+        self.view.bringSubviewToFront(indicator)
         print("in")
+        self.indicator.startAnimating()
         randomImgPicker()
+        
+        
     }
     
     func randomImgPicker() {
         
+        
         if let category_foods = foods[category] {
+            //self.indicator.stopAnimating()
+            
         let randomNumber = arc4random_uniform(UInt32(category_foods.count)) // generating random number
             
-        
             //아울렛이미지(randomImage).image
         
-                
             randomImage.image = UIImage(named: category_foods[Int(randomNumber)])
+            
+            
         }
+        
     }
+    
+
+ 
 
 }

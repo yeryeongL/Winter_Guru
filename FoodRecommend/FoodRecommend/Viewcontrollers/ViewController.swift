@@ -7,9 +7,10 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     var titleImages = ["korean","chinese","japanese","western","snack","asian"]
-    
+   
     var foodData = [
         FoodData("한식","korean"),
         FoodData("중식","chinese"),
@@ -25,6 +26,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+       
+        
+        
         let bannerViewController = Banner()
         // 화면에 표시되도록 넣어줌
         bannerScrollView.addSubview(bannerViewController.view)
@@ -79,17 +83,19 @@ extension ViewController: UICollectionViewDelegateFlowLayout{
     
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
         if let cell =  sender as? FoodCell {
+            
             print("1")
             if let vc = segue.destination as? RandomGenerator, let title = cell.titleLabel, let title_text = title.text {
+                
                 print("2")
                 vc.category = title_text
+                
                 //print(vc.foods)
                 print("3")
-                
-                
             }
-            
+          
         }
     }
 }

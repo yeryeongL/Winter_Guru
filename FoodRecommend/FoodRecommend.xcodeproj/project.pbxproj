@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D02292AD25CA4CA800EBE8D6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02292AC25CA4CA800EBE8D6 /* Banner.swift */; };
+		D0F0637825D03F9D00247D65 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = D0F0637725D03F9D00247D65 /* NVActivityIndicatorView */; };
+		D0F0637A25D03F9D00247D65 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = D0F0637925D03F9D00247D65 /* NVActivityIndicatorViewExtended */; };
 		FF8847BF25CC534C009FC2A3 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8847BE25CC534C009FC2A3 /* RandomGenerator.swift */; };
 		FFD21FC425D02B9A001437BE /* intro_food.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFD21FC325D02B9A001437BE /* intro_food.gif */; };
 		FFD21FC925D02FA4001437BE /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = FFD21FC825D02FA4001437BE /* SwiftyGif */; };
@@ -46,7 +48,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF82A8425C7A94B007AE550 /* Parchment in Frameworks */,
+				D0F0637A25D03F9D00247D65 /* NVActivityIndicatorViewExtended in Frameworks */,
 				FFD21FC925D02FA4001437BE /* SwiftyGif in Frameworks */,
+				D0F0637825D03F9D00247D65 /* NVActivityIndicatorView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +120,8 @@
 			packageProductDependencies = (
 				FFF82A8325C7A94B007AE550 /* Parchment */,
 				FFD21FC825D02FA4001437BE /* SwiftyGif */,
+				D0F0637725D03F9D00247D65 /* NVActivityIndicatorView */,
+				D0F0637925D03F9D00247D65 /* NVActivityIndicatorViewExtended */,
 			);
 			productName = FoodRecommend;
 			productReference = FFF82A6A25C7A7F1007AE550 /* FoodRecommend.app */;
@@ -147,6 +153,7 @@
 			packageReferences = (
 				FFF82A8225C7A94B007AE550 /* XCRemoteSwiftPackageReference "Parchment" */,
 				FFD21FC725D02FA4001437BE /* XCRemoteSwiftPackageReference "SwiftyGif" */,
+				D0F0637625D03F9D00247D65 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 			);
 			productRefGroup = FFF82A6B25C7A7F1007AE550 /* Products */;
 			projectDirPath = "";
@@ -387,6 +394,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D0F0637625D03F9D00247D65 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		FFD21FC725D02FA4001437BE /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
@@ -406,6 +421,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D0F0637725D03F9D00247D65 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0F0637625D03F9D00247D65 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		D0F0637925D03F9D00247D65 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0F0637625D03F9D00247D65 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
 		FFD21FC825D02FA4001437BE /* SwiftyGif */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FFD21FC725D02FA4001437BE /* XCRemoteSwiftPackageReference "SwiftyGif" */;
