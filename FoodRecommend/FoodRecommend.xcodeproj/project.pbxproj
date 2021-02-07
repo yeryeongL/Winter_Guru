@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D02292AD25CA4CA800EBE8D6 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D02292AC25CA4CA800EBE8D6 /* Banner.swift */; };
 		FF8847BF25CC534C009FC2A3 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8847BE25CC534C009FC2A3 /* RandomGenerator.swift */; };
+		FFD21FC425D02B9A001437BE /* intro_food.gif in Resources */ = {isa = PBXBuildFile; fileRef = FFD21FC325D02B9A001437BE /* intro_food.gif */; };
+		FFD21FC925D02FA4001437BE /* SwiftyGif in Frameworks */ = {isa = PBXBuildFile; productRef = FFD21FC825D02FA4001437BE /* SwiftyGif */; };
+		FFD21FCC25D02FE7001437BE /* introViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD21FCB25D02FE7001437BE /* introViewController.swift */; };
 		FFF82A6E25C7A7F1007AE550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A6D25C7A7F1007AE550 /* AppDelegate.swift */; };
 		FFF82A7025C7A7F1007AE550 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A6F25C7A7F1007AE550 /* SceneDelegate.swift */; };
 		FFF82A7225C7A7F1007AE550 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF82A7125C7A7F1007AE550 /* ViewController.swift */; };
@@ -23,6 +26,8 @@
 /* Begin PBXFileReference section */
 		D02292AC25CA4CA800EBE8D6 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
 		FF8847BE25CC534C009FC2A3 /* RandomGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
+		FFD21FC325D02B9A001437BE /* intro_food.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = intro_food.gif; path = ../../intro_food.gif; sourceTree = "<group>"; };
+		FFD21FCB25D02FE7001437BE /* introViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introViewController.swift; sourceTree = "<group>"; };
 		FFF82A6A25C7A7F1007AE550 /* FoodRecommend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodRecommend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF82A6D25C7A7F1007AE550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF82A6F25C7A7F1007AE550 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +46,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF82A8425C7A94B007AE550 /* Parchment in Frameworks */,
+				FFD21FC925D02FA4001437BE /* SwiftyGif in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFD21FCE25D03610001437BE /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				FFD21FCB25D02FE7001437BE /* introViewController.swift */,
+				FFF82A7125C7A7F1007AE550 /* ViewController.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
 		FFF82A6125C7A7F0007AE550 = {
 			isa = PBXGroup;
 			children = (
@@ -66,9 +81,9 @@
 		FFF82A6C25C7A7F1007AE550 /* FoodRecommend */ = {
 			isa = PBXGroup;
 			children = (
+				FFD21FCE25D03610001437BE /* Viewcontrollers */,
 				FFF82A6D25C7A7F1007AE550 /* AppDelegate.swift */,
 				FFF82A6F25C7A7F1007AE550 /* SceneDelegate.swift */,
-				FFF82A7125C7A7F1007AE550 /* ViewController.swift */,
 				FFF82A7325C7A7F1007AE550 /* Main.storyboard */,
 				FFF82A7625C7A7F2007AE550 /* Assets.xcassets */,
 				FFF82A7825C7A7F2007AE550 /* LaunchScreen.storyboard */,
@@ -77,6 +92,7 @@
 				FFF82A8B25C84D78007AE550 /* FoodData.swift */,
 				D02292AC25CA4CA800EBE8D6 /* Banner.swift */,
 				FF8847BE25CC534C009FC2A3 /* RandomGenerator.swift */,
+				FFD21FC325D02B9A001437BE /* intro_food.gif */,
 			);
 			path = FoodRecommend;
 			sourceTree = "<group>";
@@ -99,6 +115,7 @@
 			name = FoodRecommend;
 			packageProductDependencies = (
 				FFF82A8325C7A94B007AE550 /* Parchment */,
+				FFD21FC825D02FA4001437BE /* SwiftyGif */,
 			);
 			productName = FoodRecommend;
 			productReference = FFF82A6A25C7A7F1007AE550 /* FoodRecommend.app */;
@@ -129,6 +146,7 @@
 			mainGroup = FFF82A6125C7A7F0007AE550;
 			packageReferences = (
 				FFF82A8225C7A94B007AE550 /* XCRemoteSwiftPackageReference "Parchment" */,
+				FFD21FC725D02FA4001437BE /* XCRemoteSwiftPackageReference "SwiftyGif" */,
 			);
 			productRefGroup = FFF82A6B25C7A7F1007AE550 /* Products */;
 			projectDirPath = "";
@@ -145,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFF82A7A25C7A7F2007AE550 /* LaunchScreen.storyboard in Resources */,
+				FFD21FC425D02B9A001437BE /* intro_food.gif in Resources */,
 				FFF82A7725C7A7F2007AE550 /* Assets.xcassets in Resources */,
 				FFF82A7525C7A7F1007AE550 /* Main.storyboard in Resources */,
 			);
@@ -164,6 +183,7 @@
 				FFF82A8C25C84D78007AE550 /* FoodData.swift in Sources */,
 				FFF82A7025C7A7F1007AE550 /* SceneDelegate.swift in Sources */,
 				D02292AD25CA4CA800EBE8D6 /* Banner.swift in Sources */,
+				FFD21FCC25D02FE7001437BE /* introViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +387,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FFD21FC725D02FA4001437BE /* XCRemoteSwiftPackageReference "SwiftyGif" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kirualex/SwiftyGif.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		FFF82A8225C7A94B007AE550 /* XCRemoteSwiftPackageReference "Parchment" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rechsteiner/Parchment";
@@ -378,6 +406,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FFD21FC825D02FA4001437BE /* SwiftyGif */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFD21FC725D02FA4001437BE /* XCRemoteSwiftPackageReference "SwiftyGif" */;
+			productName = SwiftyGif;
+		};
 		FFF82A8325C7A94B007AE550 /* Parchment */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FFF82A8225C7A94B007AE550 /* XCRemoteSwiftPackageReference "Parchment" */;
