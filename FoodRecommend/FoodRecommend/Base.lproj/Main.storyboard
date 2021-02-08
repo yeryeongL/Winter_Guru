@@ -100,12 +100,12 @@
         <scene sceneID="Xfn-sb-Pkb">
             <objects>
                 <viewController id="QKf-Tj-q0m" customClass="RandomGenerator" customModule="FoodRecommend" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Utm-Gm-L20">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Utm-Gm-L20">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-uI-3NJ">
-                                <rect key="frame" x="20" y="108" width="374" height="674"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-uI-3NJ">
+                                <rect key="frame" x="46" y="175" width="322" height="547"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LRN-uI-3NJ" secondAttribute="height" multiplier="1:1" id="VC6-eE-eYZ"/>
                                 </constraints>
