@@ -10,13 +10,20 @@ import NVActivityIndicatorView
 
 class RandomGenerator: UIViewController{
     
+    
     var indicator:NVActivityIndicatorView!
+    
+
 
     //아울렛 이름을 KoreanImage로 해서 하나 만들것
     
     
     @IBOutlet weak var randomImage: UIImageView!
+    @IBOutlet weak var refresh: UIButton!
+    
     var category = ""
+    
+    
     
 //    let foods:[String:[String]] = ["한식":Array<String>(), "중식":Array<String>(),"일식":Array<String>(),"양식":Array<String>(),"아시안":Array<String>(),"분식":Array<String>()]
     
@@ -29,12 +36,16 @@ class RandomGenerator: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        indicator = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), type: .pacman, color: .white, padding: self.view.frame.width/2 - 40)
-        indicator.backgroundColor = UIColor.black.withAlphaComponent(0.3)
+        indicator = NVActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height), type: .pacman, color: .black, padding: self.view.frame.width/2 - 40)
+        
+        indicator.backgroundColor = UIColor.white.withAlphaComponent(1)
+        
+
         self.view.addSubview(indicator)
         self.view.bringSubviewToFront(indicator)
         print("in")
-        self.indicator.startAnimating()
+        
+        
         randomImgPicker()
         
         
@@ -42,7 +53,7 @@ class RandomGenerator: UIViewController{
     
     func randomImgPicker() {
         
-        
+        self.indicator.startAnimating()
         if let category_foods = foods[category] {
             //self.indicator.stopAnimating()
             
@@ -52,11 +63,25 @@ class RandomGenerator: UIViewController{
         
             randomImage.image = UIImage(named: category_foods[Int(randomNumber)])
             
+            let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { timer in
+
+                self.indicator.stopAnimating()
+
+            })
             
         }
         
     }
     
+    
+    @IBAction func onclick(_ sender: Any) {
+        
+        randomImgPicker()
+    }
+    
+  
+    
+   
 
  
 

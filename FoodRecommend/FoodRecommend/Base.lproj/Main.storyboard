@@ -17,14 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soG-bx-m7W">
-                                <rect key="frame" x="1" y="88" width="414" height="190"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="soG-bx-m7W" secondAttribute="height" multiplier="944:456" id="rKc-4c-TuA"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="AnC-9E-5ik"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="xd2-A1-IdX"/>
-                            </scrollView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="CNQ-NX-Lhk">
                                 <rect key="frame" x="1" y="304" width="414" height="472"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -43,18 +35,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="326" height="436"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="korean" translatesAutoresizingMaskIntoConstraints="NO" id="Ut2-zb-pZl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="326"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Ut2-zb-pZl" secondAttribute="height" multiplier="1:1" id="cnt-rX-Ax1"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대분류 이름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnP-qE-FyY">
                                                     <rect key="frame" x="8" y="346" width="310" height="27.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="korean" translatesAutoresizingMaskIntoConstraints="NO" id="Ut2-zb-pZl">
+                                                    <rect key="frame" x="0.0" y="-33" width="326" height="326"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Ut2-zb-pZl" secondAttribute="height" multiplier="1:1" id="cnt-rX-Ax1"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="xnP-qE-FyY" firstAttribute="top" secondItem="Ut2-zb-pZl" secondAttribute="bottom" constant="20" id="4jJ-VC-pVc"/>
@@ -78,6 +70,18 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="iwk-xg-OGl"/>
                                 </connections>
                             </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soG-bx-m7W">
+                                <rect key="frame" x="1" y="88" width="414" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="soG-bx-m7W" secondAttribute="height" multiplier="944:456" id="rKc-4c-TuA"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="AnC-9E-5ik"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="xd2-A1-IdX"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="슈리" translatesAutoresizingMaskIntoConstraints="NO" id="IHo-HP-w0J">
+                                <rect key="frame" x="0.0" y="734" width="414" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -100,16 +104,25 @@
         <scene sceneID="Xfn-sb-Pkb">
             <objects>
                 <viewController id="QKf-Tj-q0m" customClass="RandomGenerator" customModule="FoodRecommend" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Utm-Gm-L20">
+                    <view key="view" contentMode="scaleToFill" id="Utm-Gm-L20">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-uI-3NJ">
-                                <rect key="frame" x="46" y="175" width="322" height="547"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LRN-uI-3NJ">
+                                <rect key="frame" x="46" y="176" width="322" height="371"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="LRN-uI-3NJ" secondAttribute="height" multiplier="1:1" id="VC6-eE-eYZ"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwa-g1-Ii8">
+                                <rect key="frame" x="178" y="626" width="59" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="다시하기"/>
+                                <connections>
+                                    <action selector="onclick:" destination="QKf-Tj-q0m" eventType="touchUpInside" id="S3J-8p-ehF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1aL-Si-E5a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -126,6 +139,7 @@
                     <navigationItem key="navigationItem" id="sM3-Vd-Zm9"/>
                     <connections>
                         <outlet property="randomImage" destination="LRN-uI-3NJ" id="M5I-Ld-gme"/>
+                        <outlet property="refresh" destination="Fwa-g1-Ii8" id="Vf0-cc-guX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEO-zD-p5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -182,7 +196,8 @@
     </scenes>
     <resources>
         <image name="intro_food.gif" width="2048" height="2048"/>
-        <image name="korean" width="512" height="510"/>
+        <image name="korean" width="436" height="422"/>
+        <image name="슈리" width="1116" height="978"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

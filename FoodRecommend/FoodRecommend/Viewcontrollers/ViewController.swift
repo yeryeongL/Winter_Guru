@@ -9,15 +9,16 @@ import UIKit
 
 
 class ViewController: UIViewController {
-    var titleImages = ["korean","chinese","japanese","western","snack","asian"]
+    var titleImages = ["korean","chinese","japanese","asian","snack","western"]
    
     var foodData = [
         FoodData("한식","korean"),
         FoodData("중식","chinese"),
         FoodData("일식","japanese"),
-        FoodData("양식","western"),
+        FoodData("아시안","asian"),
         FoodData("분식","snack"),
-        FoodData("아시안","asian")
+        FoodData("양식","western")
+       
     ]
     
     @IBOutlet weak var bannerScrollView: UIScrollView!
